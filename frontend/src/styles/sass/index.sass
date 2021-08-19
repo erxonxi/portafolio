@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap')
+
+/* CONFIGURACIÓN */
+*,
+*::after,
+*::before
+    box-sizing: border-box
+
+/* VARS */
+:root
+    --font: 'Roboto', sans-serif
+    --bg-color: #f2f2f2
+    --width-container: 1200px
+    --gutter: 1rem
+    --container-max-width: 84rem
+
+/* ESTILOS GENERALES */
+body
+    background-color: var(--bg-color)
+    font-family: var(--font)
+    font-size: 18px
+
+p
+    line-height: 27px
+
+img
+    vertical-align: top
+    width: 100%
+
+/* CONTAINER */
+.container
+    max-width: 90%
+    width: var(--width-container)
+    margin: 20px auto
+    overflow: hidden
+
+    &-full
+        width: 100%
+        padding: 0 40px
+        margin: 20px auto
+
+/* GRID */
+.grid
+    display: grid
+    gap: 20px
+
+@for $i from 1 through 12
+    .col-#{$i}
+        grid-template-columns: repeat($i, 1fr)
+
+@for $i from 1 through 12
+    .row-#{$i}
+        grid-template-rows: repeat($i, 1fr)
+
+@for $i from 1 through 12
+    .span-#{$i}
+        grid-column: span $i
+
+@media screen and (max-width: 992px)
+    @for $i from 1 through 12
+        .md-col-#{$i}
+            grid-template-columns: repeat($i, 1fr)
+    @for $i from 1 through 12
+        .md-span-#{$i}
+            grid-column: span $i
+
+@media screen and (max-width: 576px)
+    @for $i from 1 through 12
+        .sm-col-#{$i}
+            grid-template-columns: repeat($i, 1fr)
+    @for $i from 1 through 12
+        .sm-span-#{$i}
+            grid-column: span $i
+
+/* COMPONENTS */
+.card
+    padding: 40px
+    background: #fff
+    border-radius: 3px
+    box-shadow: 0px 0px 30px rgba(221, 211, 211,0.3)
+
+.nav
+    background: rgba(67,16,195)
+    display: flex
+    flex-wrap: wrap
+
+    & .container
+        display: flex
+        flex-wrap: wrap
+        margin: 0 auto
+
+    a
+        color: #fff
+        text-decoration: none
+        display: flex
+        align-items: center
+        text-align: center
+        padding: 15px 25px
+        transition: .3s ease all
+        font-size: 18px
+
+        &.active, &:hover
+            background: rgba(89,59,211)
+
+/* FORMULARIOS */
+form *
+    font-family: var(--font)
+
+    &.input
+        padding: 10px 15px
+        border-radius: 3px
+        border: 1px solid #d6d6d6
+        transition: .3s ease all
+        width: 100%
+        margin-bottom: 20px
+
+        &:focus
+            border: 1px solid #641ee7
+            outline: none
+
+.btn
+    background: #641ee7
+    border: none
+    cursor: pointer
+    color: #fff
+    display: inline-block
+    padding: 10px 15px
+    border-radius: 3px
+    text-align: center
+    line-height: 22px
+    transition: .3s ease all
+
+    &:hover
+        background: #5114c2
+
+    &.green
+        background: #00a04a
+
+        &:hover
+            background: #01853f
+
+    &.red
+        background: #da0f00
+
+        &:hover
+            background: #b90c00
+
+/* FUENTES */
+h1, h2, h3, h4, h5, h6
+    margin-top: 0
+
+.display
+    font-weight: 700
+
+    &-xl
+        font-size: 64px
+    &-lg
+        font-size: 54px
+    &-sm
+        font-size: 44px
+
+/* HELPERS */
+.text-center
+    text-align: center
+
+.text-center
+    text-align: left
+
+.text-center
+    text-align: right
+
+.m-0
+    margin: 0
+
+.p-0
+    padding: 0
+
+@for $i from 1 through 10
+    .m-#{$i * 4}
+        margin: $i * 4px
+
+@for $i from 1 through 10
+    .p-#{$i * 4}
+        padding: $i * 4px
+
+@for $i from 1 through 10
+    .mt-#{$i * 4}
+        margin-top: $i * 4px
+
+@for $i from 1 through 10
+    .pt-#{$i * 4}
+        padding-top: $i * 4px
+
+@for $i from 1 through 10
+    .mb-#{$i * 4}
+        margin-bottom: $i * 4px
+
+@for $i from 1 through 10
+    .pb-#{$i * 4}
+        padding-bottom: $i * 4px
+
+@for $i from 1 through 10
+    .ml-#{$i * 4}
+        margin-left: $i * 4px
+
+@for $i from 1 through 10
+    .pl-#{$i * 4}
+        padding-left: $i * 4px
+
+@for $i from 1 through 10
+    .mr-#{$i * 4}
+        margin-right: $i * 4px
+
+@for $i from 1 through 10
+    .pr-#{$i * 4}
+        padding-right: $i * 4px
+
+@for $i from 1 through 10
+    .mx-#{$i * 4}
+        margin-right: $i * 4px
+        margin-left: $i * 4px
+
+@for $i from 1 through 10
+    .px-#{$i * 4}
+        padding-right: $i * 4px
+        padding-left: $i * 4px
+
+@for $i from 1 through 10
+    .my-#{$i * 4}
+        margin-top: $i * 4px
+        margin-bottom: $i * 4px
+
+@for $i from 1 through 10
+    .py-#{$i * 4}
+        padding-top: $i * 4px
+        padding-bottom: $i * 4px
