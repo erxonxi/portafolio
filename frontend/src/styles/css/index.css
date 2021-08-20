@@ -394,6 +394,10 @@ img {
   }
 }
 /* COMPONENTS */
+.footer {
+  background: #ececec;
+}
+
 .card {
   padding: 40px;
   background: #fff;

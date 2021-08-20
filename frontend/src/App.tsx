@@ -1,5 +1,6 @@
 import React from 'react';
 import Experience from './components/Experience';
+import Footer from './components/Footer';
 import Landing from './components/Landing';
 import NavBar from './components/NavBar';
 import Projects from './components/Projects';
@@ -19,6 +20,8 @@ const App = () => {
             <Experience />
 
             <Projects />
+
+            <Footer />
         </>
     );
 };

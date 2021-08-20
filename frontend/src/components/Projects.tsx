@@ -13,7 +13,7 @@ const Projects = () => {
                     Aqui puedes echar un vistazo a mis diferentes proyectos.
                     Podras ver el codigo en mi Github.
                 </p>
-                <div className={'grid col-2 sm-col-1 py-40'}>
+                <div className={'grid col-2 md-col-1 py-40'}>
                     <div className={'card'}>
                         <h2>Web Personal</h2>
                         <img src="img/portafolio_img.png" alt="" />
