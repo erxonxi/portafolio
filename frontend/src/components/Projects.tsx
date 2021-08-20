@@ -1,5 +1,6 @@
 import React from 'react';
-import { FaGithub } from 'react-icons/fa';
+import { FaGithub, FaSearchengin } from 'react-icons/fa';
+import { FiSettings } from 'react-icons/fi';
 
 const Projects = () => {
     return (
@@ -21,14 +22,30 @@ const Projects = () => {
                             proyectos. Ese dia llego y puedes ver el codigo y la
                             evolucion aqui.
                         </p>
-                        <div className={'container-full grid col-2'}>
+                        <div className={'container-full grid col-2 sm-col-1'}>
                             <a className={'btn'} href={'/'}>
                                 VER DEMO
                             </a>
-                            <a className={'btn'} href={'https://github.com/erxonxi/portafolio'}>
+                            <a
+                                className={'btn'}
+                                href={'https://github.com/erxonxi/portafolio'}
+                            >
                                 <FaGithub className={'mr-12'} />
                                 VER CODIGO
                             </a>
+                        </div>
+                    </div>
+                    <div className={'card'}>
+                        <h1 className={'text-center'}>
+                            Working in deploy more apps...
+                        </h1>
+                        <div className={'container-full text-center'}>
+                            <div className={'lds-ellipsis'}>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
                         </div>
                     </div>
                 </div>

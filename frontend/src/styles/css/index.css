@@ -510,6 +510,62 @@ form *.input:focus {
   background: #b90c00;
 }
 
+.lds-ellipsis {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ellipsis div {
+  position: absolute;
+  top: 33px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #e75e1e;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.lds-ellipsis div:nth-child(1) {
+  left: 8px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+  left: 8px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+  left: 32px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+  left: 56px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
+}
 /* FUENTES */
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
@@ -634,6 +690,50 @@ h1, h2, h3, h4, h5, h6 {
 
 .font-56 {
   font-size: 56px;
+}
+
+.font-60 {
+  font-size: 60px;
+}
+
+.font-64 {
+  font-size: 64px;
+}
+
+.font-68 {
+  font-size: 68px;
+}
+
+.font-72 {
+  font-size: 72px;
+}
+
+.font-76 {
+  font-size: 76px;
+}
+
+.font-80 {
+  font-size: 80px;
+}
+
+.font-84 {
+  font-size: 84px;
+}
+
+.font-88 {
+  font-size: 88px;
+}
+
+.font-92 {
+  font-size: 92px;
+}
+
+.font-96 {
+  font-size: 96px;
+}
+
+.font-100 {
+  font-size: 100px;
 }
 
 .m-0 {
