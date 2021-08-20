@@ -99,32 +99,47 @@ img
         flex-wrap: wrap
         margin: 0 auto
 
-    a
+    & .icon
+        background: #e2e2e2
         color: #292929
         text-decoration: none
         display: flex
         align-items: center
         text-align: center
-        padding: 12px 27px
+        padding: 14px 19px
         transition: .3s ease all
         font-size: 18px
         margin-top: 14px
         margin-bottom: 14px
         margin-left: 14px
         margin-right: 14px
+        border-radius: 100%
 
-        &.active, &:hover
+        &:hover
             background: #d1d1d1
 
     & .name
+        display: flex
+        align-items: center
+        text-align: center
+        padding: 14px 0px
+        transition: .5s ease all
+        margin-top: 5px
+        margin-bottom: 5px
+        margin-right: 14px
+        text-decoration: none
+        background: none
         color: #000000
         font-weight: 900
-        font-size: 1.5rem
+        font-size: 2.4rem
         &:hover
             color: transparent
             background-size: cover
             background-image: linear-gradient(147deg,#f90fd8,#f54377 26%,#fc1c1c 50%,#ffc30d 75%,#72fb59)
             background-clip: text
+
+.separator
+    flex: 1 1 0%
 
 /* FORMULARIOS */
 form *
@@ -143,7 +158,7 @@ form *
             outline: none
 
 .btn
-    background: #641ee7
+    background: #e75e1e
     border: none
     cursor: pointer
     color: #fff
@@ -153,9 +168,11 @@ form *
     text-align: center
     line-height: 22px
     transition: .3s ease all
+    font-weight: 700
+    text-decoration: none
 
     &:hover
-        background: #5114c2
+        background: #cc541c
 
     &.green
         background: #00a04a

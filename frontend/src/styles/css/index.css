@@ -418,33 +418,49 @@ img {
   flex-wrap: wrap;
   margin: 0 auto;
 }
-.nav a {
+.nav .icon {
+  background: #e2e2e2;
   color: #292929;
   text-decoration: none;
   display: flex;
   align-items: center;
   text-align: center;
-  padding: 12px 27px;
+  padding: 14px 19px;
   transition: 0.3s ease all;
   font-size: 18px;
   margin-top: 14px;
   margin-bottom: 14px;
   margin-left: 14px;
   margin-right: 14px;
+  border-radius: 100%;
 }
-.nav a.active, .nav a:hover {
+.nav .icon:hover {
   background: #d1d1d1;
 }
 .nav .name {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 14px 0px;
+  transition: 0.5s ease all;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 14px;
+  text-decoration: none;
+  background: none;
   color: #000000;
   font-weight: 900;
-  font-size: 1.5rem;
+  font-size: 2.4rem;
 }
 .nav .name:hover {
   color: transparent;
   background-size: cover;
   background-image: linear-gradient(147deg, #f90fd8, #f54377 26%, #fc1c1c 50%, #ffc30d 75%, #72fb59);
   background-clip: text;
+}
+
+.separator {
+  flex: 1 1 0%;
 }
 
 /* FORMULARIOS */
@@ -465,7 +481,7 @@ form *.input:focus {
 }
 
 .btn {
-  background: #641ee7;
+  background: #e75e1e;
   border: none;
   cursor: pointer;
   color: #fff;
@@ -475,9 +491,11 @@ form *.input:focus {
   text-align: center;
   line-height: 22px;
   transition: 0.3s ease all;
+  font-weight: 700;
+  text-decoration: none;
 }
 .btn:hover {
-  background: #5114c2;
+  background: #cc541c;
 }
 .btn.green {
   background: #00a04a;

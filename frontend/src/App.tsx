@@ -2,6 +2,7 @@ import React from 'react';
 import Experience from './components/Experience';
 import Landing from './components/Landing';
 import NavBar from './components/NavBar';
+import Projects from './components/Projects';
 import Skills from './components/Skills';
 
 const App = () => {
@@ -16,6 +17,8 @@ const App = () => {
             <Skills />
 
             <Experience />
+
+            <Projects />
         </>
     );
 };

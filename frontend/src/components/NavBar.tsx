@@ -1,29 +1,19 @@
 import React from 'react';
-import {
-    FaPortrait,
-    FaHome,
-    FaTerminal,
-    FaProjectDiagram,
-} from 'react-icons/fa';
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
 
 const NavBar = () => {
     return (
         <nav className={'nav'}>
             <div className={'container'}>
-                <a href="#" className={'name title-gradiant'}>
-                    Rubén Ruiz
+                <a href="/" className={'name'}>
+                    RR
                 </a>
-                <a href="#" className={'active'}>
-                    <FaHome />
+                <div className={'separator'}></div>
+                <a href="https://www.linkedin.com/in/rub%C3%A9n-ruiz-pedreira/" className={'icon'}>
+                    <FaLinkedin />
                 </a>
-                <a href="#">
-                    <FaPortrait />
-                </a>
-                <a href="#">
-                    <FaTerminal />
-                </a>
-                <a href="#">
-                    <FaProjectDiagram />
+                <a href="https://github.com/erxonxi" className={'icon'}>
+                    <FaGithub />
                 </a>
             </div>
         </nav>
