@@ -9,7 +9,7 @@
 /* VARS */
 :root
     --font: 'Roboto', sans-serif
-    --bg-color: #f2f2f2
+    --bg-color: #f0f0f0
     --width-container: 1200px
     --gutter: 1rem
     --container-max-width: 84rem
@@ -91,7 +91,6 @@ img
             box-shadow: 5px 0px 30px rgba(221, 211, 211,1)
 
 .nav
-    background: rgba(67,16,195)
     display: flex
     flex-wrap: wrap
 
@@ -101,17 +100,31 @@ img
         margin: 0 auto
 
     a
-        color: #fff
+        color: #292929
         text-decoration: none
         display: flex
         align-items: center
         text-align: center
-        padding: 15px 25px
+        padding: 12px 27px
         transition: .3s ease all
         font-size: 18px
+        margin-top: 14px
+        margin-bottom: 14px
+        margin-left: 14px
+        margin-right: 14px
 
         &.active, &:hover
-            background: rgba(89,59,211)
+            background: #d1d1d1
+
+    & .name
+        color: #000000
+        font-weight: 900
+        font-size: 1.5rem
+        &:hover
+            color: transparent
+            background-size: cover
+            background-image: linear-gradient(147deg,#f90fd8,#f54377 26%,#fc1c1c 50%,#ffc30d 75%,#72fb59)
+            background-clip: text
 
 /* FORMULARIOS */
 form *
@@ -169,6 +182,12 @@ h1, h2, h3, h4, h5, h6
         font-size: 54px
     &-sm
         font-size: 44px
+
+.title-gradiant
+    color: transparent
+    background-size: cover
+    background-image: linear-gradient(147deg,#f90fd8,#f54377 26%,#fc1c1c 50%,#ffc30d 75%,#72fb59)
+    background-clip: text
 
 /* HELPERS */
 .dark-blue

@@ -1,23 +1,12 @@
 import React from 'react';
-import { FaJs, FaPhp } from 'react-icons/fa';
-import {
-    SiApollographql,
-    SiCss3,
-    SiGit,
-    SiGraphql,
-    SiHtml5,
-    SiNodeDotJs,
-    SiPostgresql,
-    SiReact,
-    SiSass,
-    SiTypescript,
-} from 'react-icons/si';
 import SkillCard from './SkillCard';
 
 const Skills = () => {
     return (
         <div className={'container'}>
-            <h1 className={'display-md text-center m-0'}>Skills</h1>
+            <h1 className={'display-md text-center m-0 title-gradiant'}>
+                Skills
+            </h1>
             <div className={'container-sm py-20'}>
                 <p className={'text-center'}>
                     Estas son mis habilidades con tecnologías y lenguajes de
@@ -27,9 +16,7 @@ const Skills = () => {
             </div>
             <div className={'grid col-4 md-col-2 p-16'}>
                 <SkillCard
-                    url_img={
-                        'http://pngimg.com/uploads/php/php_PNG7.png'
-                    }
+                    url_img={'http://pngimg.com/uploads/php/php_PNG7.png'}
                 />
                 <SkillCard
                     url_img={
@@ -67,9 +54,8 @@ const Skills = () => {
                     }
                 />
                 <SkillCard
-                    w={100}
                     url_img={
-                        'https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png'
+                        'https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/GraphQL_Logo.svg/1200px-GraphQL_Logo.svg.png'
                     }
                 />
                 <SkillCard

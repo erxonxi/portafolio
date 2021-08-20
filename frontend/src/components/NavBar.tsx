@@ -1,11 +1,18 @@
 import React from 'react';
-import { FaPortrait, FaHome, FaTerminal, FaProjectDiagram } from 'react-icons/fa';
-
+import {
+    FaPortrait,
+    FaHome,
+    FaTerminal,
+    FaProjectDiagram,
+} from 'react-icons/fa';
 
 const NavBar = () => {
     return (
         <nav className={'nav'}>
             <div className={'container'}>
+                <a href="#" className={'name title-gradiant'}>
+                    Rubén Ruiz
+                </a>
                 <a href="#" className={'active'}>
                     <FaHome />
                 </a>

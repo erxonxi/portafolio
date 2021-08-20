@@ -3,7 +3,7 @@ import React from 'react';
 const Experience = () => {
     return (
         <div className={'container pt-16'}>
-            <h1 className={'display-md text-center m-0'}>Experiencia</h1>
+            <h1 className={'display-md text-center title-gradiant m-0'}>Experiencia</h1>
             <div className={'container-sm py-20'}>
                 <p className={'text-center pb-40'}>
                     Esta es mi experiencia laboral. Actualmente solo eh

@@ -4,9 +4,9 @@ const Landing = () => {
     return (
         <div className={'container pt-100 mb-40'}>
             <h1>
-                Hola! Soy <span className={'text-orange'}>Rubén</span>👋
+                Hola! Soy <span className={'title-gradiant'}>Rubén</span>👋
             </h1>
-            <h1 className={'text-orange display-xl'}>
+            <h1 className={'display-xl title-gradiant'}>
                 Full Stack Junior Developer
             </h1>
             <p className={'font-20'}>
