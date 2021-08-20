@@ -5,7 +5,7 @@ const Experience = () => {
         <div className={'container pt-16'}>
             <h1 className={'display-md text-center m-0'}>Experiencia</h1>
             <div className={'container-sm py-20'}>
-                <p className={'text-center pb-50'}>
+                <p className={'text-center pb-40'}>
                     Esta es mi experiencia laboral. Actualmente solo eh
                     trabajado en la empresa en la que me encuentro.
                 </p>
