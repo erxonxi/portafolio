@@ -1,5 +1,4 @@
 import React from 'react';
-import { FaGithub } from 'react-icons/fa';
 import Project from './Project';
 
 const Projects = () => {
@@ -33,6 +32,14 @@ const Projects = () => {
                         img_alt={'Giff App'}
                         url_demo={'https://giff-app.rubenruizpedreira.es'}
                         url_github={'https://github.com/erxonxi/gif-app'}
+                    />
+                    <Project
+                        title={'ToDo App'}
+                        description={'Pequeña practica con ReactJS'}
+                        img={'img/project_todo_app.png'}
+                        img_alt={'ToDo App'}
+                        url_demo={'https://todo.rubenruizpedreira.es'}
+                        url_github={'https://github.com/erxonxi/todoapp'}
                     />
                     <div className={'card'}>
                         <h1 className={'text-center'}>
